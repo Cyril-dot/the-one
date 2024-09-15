@@ -1,0 +1,17 @@
+/* Previous styles */
+
+#clear-completed-btn,
+#save-tasks-btn,
+#load-task-btn {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}

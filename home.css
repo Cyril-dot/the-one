@@ -1,0 +1,257 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #333;
+    /* dark gray background color for a professional look */
+}
+
+.hero-content {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+    /* left-align the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* push the text to the top */
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    /* increase font size of the heading */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    /* white text color for contrast */
+    text-shadow: 2px 2px 4px #000;
+    /* add a subtle shadow to the text */
+}
+
+.hero-content p {
+    font-size: 30px;
+    /* increase font size of the paragraph text */
+    margin-bottom: 30px;
+    color: #fff;
+    /* white text color for contrast */
+    font-style: italic;
+    /* add an italic font style to the paragraph text */
+}
+
+.menu {
+    width: 30%;
+    padding: 20px;
+    text-align: right;
+    /* right-align the menu */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #fff;
+    /* white text color for contrast */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    /* add a smooth transition effect to the text color */
+    font-size: 18px;
+    /* increase font size of menu items */
+    font-family: 'Playfair Display', serif;
+    /* change font style to a more stylish one */
+    font-weight: bold;
+    /* make font bold */
+}
+
+.menu a:hover {
+    color: #ccc;
+    /* light gray text color on hover */
+}
+
+.menu a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.2s ease-in-out;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+.cta-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    /* decrease padding to make the border box smaller */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    /* increase font size for better readability */
+    transition: background-color 0.2s ease-in-out;
+    /* add a smooth transition effect to the background color */
+}
+
+.cta-btn:hover {
+    background-color: #3e8e41;
+}
+
+
+/* Featured Posts Styles */
+
+.featured-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.featured-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-posts li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.featured-posts .post-content {
+    width: 50%;
+    margin: 20px;
+}
+
+.featured-posts img {
+    width: 750px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.featured-posts .post-content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.featured-posts .post-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.featured-posts li.anime-place {
+    flex-direction: row;
+}
+
+.featured-posts li.anime-place img {
+    margin-right: 15px;
+    margin-left: 5px;
+    width: 850px;
+    height: 600px;
+}
+
+.featured-posts li.anime-place .post-content {
+    margin-right: 5px;
+    margin-left: 15px;
+    text-align: right;
+}
+
+.featured-posts li.inspirational-place {
+    flex-direction: row;
+}
+
+.featured-posts li.inspirational-place img {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.featured-posts li.inspirational-place .post-content {
+    margin-right: 5px;
+    margin-left: 15px;
+    text-align: right;
+}
+
+.featured-posts li.movie-place {
+    flex-direction: row;
+}
+
+.featured-posts li.movie-place img {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.featured-posts li.movie-place .post-content {
+    margin-right: 5px;
+    margin-left: 15px;
+    text-align: right;
+}
+
+
+/* Newsletter Styles */
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.newsletter-content {
+    width: 50%;
+    margin: 20px;
+}
+
+.newsletter img {
+    width: 40%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Social Media Styles */
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.social-media-content {
+    width: 50%;
+    margin: 20px;
+}
+
+.social-media img {
+    width: 40%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
